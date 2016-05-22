@@ -7,8 +7,8 @@ html {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 96px 0 192px;
   margin: 0 16px;
+  padding: 0;
   -webkit-text-stroke: .25px black;
   -moz-text-stroke: .25px black;
   -text-stroke: .25px black;
@@ -21,11 +21,13 @@ svg {
 }
 
 svg:first-of-type {
-  transform:scale(.8)
+  transform: scale(.8);
+  margin: 96px 0 0;
 }
 
 svg:nth-of-type(2) {
-  transform:scale(.6)
+  transform: scale(.6);
+  margin: 0 0 192px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -121,6 +123,14 @@ li:before {
   text-align: center;
 }
 
+.animate {
+  animation: text-stroke 6s;
+}
+@keyframes text-stroke {
+  0%   { -webkit-text-stroke: .25px white; }
+  100% { -webkit-text-stroke: .25px black; }
+}
+
 .piece {
   display: inline-block;
   margin-bottom: 24px;
@@ -134,16 +144,14 @@ li:before {
 
 @media (max-width: 1234px) {
 
-  html {
-      padding: 32px 0 96px;
-  }
-
   svg:first-of-type {
-    transform:scale(.6)
+    transform: scale(.6);
+    margin: 24px 0 0;
   }
 
   svg:nth-of-type(2) {
-    transform:scale(.4)
+    transform: scale(.4);
+    margin: 0 0 192px;
   }
 
   h1, h2, h3, h4, h5, h6 {
