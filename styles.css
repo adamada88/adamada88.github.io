@@ -124,7 +124,7 @@ li:before {
 }
 
 .animate {
-  animation: text-stroke 2s;
+  animation: text-stroke 3s;
 }
 @keyframes text-stroke {
   0%   { -webkit-text-stroke: .25px white; }
@@ -142,13 +142,7 @@ li:before {
 }
 
 
-@media (max-width: 1234px) {
-
-html {
-  -webkit-text-stroke: 0px black;
-  -moz-text-stroke: 0px black;
-  -text-stroke: 0px black;
-}
+@media (max-width: 1200px) {
 
   svg:first-of-type {
     transform: scale(.6);
@@ -177,6 +171,17 @@ html {
 
   .arrow {
     display: none;
+  }
+
+}
+
+
+@media (max-width: 1025px) {
+
+  html {
+    -webkit-text-stroke: 0px black;
+    -moz-text-stroke: 0px black;
+    -text-stroke: 0px black;
   }
 
 }
