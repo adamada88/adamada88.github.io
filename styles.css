@@ -144,6 +144,12 @@ li:before {
 
 @media (max-width: 1234px) {
 
+html {
+  -webkit-text-stroke: 0px black;
+  -moz-text-stroke: 0px black;
+  -text-stroke: 0px black;
+}
+
   svg:first-of-type {
     transform: scale(.6);
     margin: 8px 0 0;
