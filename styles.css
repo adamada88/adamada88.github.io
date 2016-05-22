@@ -1,0 +1,164 @@
+::selection {
+  background: yellow;
+}
+
+html {
+  font-size: 24px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 96px 0 192px;
+  margin: 0 16px;
+  -webkit-text-stroke: .25px black;
+  -moz-text-stroke: .25px black;
+  -text-stroke: .25px black;
+}
+
+svg {
+  width: 200px;
+  position: relative;
+  left: calc(50% - 100px);
+}
+
+svg:first-of-type {
+  transform:scale(.8)
+}
+
+svg:nth-of-type(2) {
+  transform:scale(.6)
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+section:before {
+  font-family: 'Josefin Slab', serif;
+  position: relative;
+  top: 45px;
+}
+
+section:first-of-type:before {
+  content:'About me';
+  left: -150px;
+}
+
+section:nth-of-type(2):before {
+  content:'My past';
+  left: -133px;
+}
+
+section:nth-of-type(3):before {
+  content:'My design philosophy';
+  left: -270px;
+}
+
+section:nth-of-type(4):before {
+  content:'Some recent work';
+  left: -225px;
+}
+
+section:nth-of-type(5):before {
+  content:'My contact info';
+  left: -205px;
+}
+
+p, ul {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 16px 0;
+  margin: 0;
+}
+
+strong {
+  font-style: normal;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #3366cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #3366cc;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 8px 18px;
+  margin: 0;
+  list-style: none;
+  text-indent: -21px;
+}
+
+li:before {
+ content: "\25b8\00a0";
+}
+
+.center {
+  text-align: center;
+}
+
+.piece {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.divide {
+  margin: 32px auto;
+  border-top: 1px solid #000;
+}
+
+
+@media (max-width: 1234px) {
+
+  html {
+      padding: 32px 0 96px;
+      -webkit-text-stroke: .34px black;
+      -moz-text-stroke: .34px black;
+      -text-stroke: .34px black;
+  }
+
+  svg:first-of-type {
+    transform:scale(.6)
+  }
+
+  svg:nth-of-type(2) {
+    transform:scale(.4)
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 32px;
+  }
+  p, ul, a {
+    font-size: 20px;
+  }
+  section:before {
+    position: static;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+}
