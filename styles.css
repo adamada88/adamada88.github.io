@@ -22,12 +22,13 @@ svg {
 
 svg:first-of-type {
   transform: scale(.8);
-  margin: 96px 0 0;
+  margin: 96px 0 16px;
 }
 
 svg:nth-of-type(2) {
-  transform: scale(.6);
+  transform: scale(.4);
   margin: 0 0 192px;
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -120,8 +121,9 @@ li:before {
  content: "\25b8\00a0";
 }
 
-.center {
+.title {
   text-align: center;
+  margin-top: -10px;
 }
 
 .animate {
