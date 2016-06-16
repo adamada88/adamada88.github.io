@@ -28,7 +28,7 @@ svg:first-of-type {
 svg:nth-of-type(2) {
   transform: scale(.4);
   margin: 0 0 192px;
-  cursor: pointer;
+  cursor: pon
 }
 
 h1, h2, h3, h4, h5, h6 {
