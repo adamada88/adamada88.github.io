@@ -1,5 +1,5 @@
 ::selection {
-  background: yellow;
+  background: #FFEB3B;
 }
 
 html {
@@ -28,7 +28,7 @@ svg:first-of-type {
 svg:nth-of-type(2) {
   transform: scale(.4);
   margin: 0 0 192px;
-  cursor: pon
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -93,7 +93,11 @@ strong {
 
 a {
   text-decoration: none;
-  color: #3366cc;
+  color: #2196F3;
+  font-weight: 600;
+  -webkit-text-stroke: .25px #2196F3;
+  -moz-text-stroke: .25px #2196F3;
+  -text-stroke: .25px #2196F3;
 }
 
 a:hover {
@@ -102,7 +106,10 @@ a:hover {
 
 a:visited {
   text-decoration: none;
-  color: #3366cc;
+  color: #673AB7;
+  -webkit-text-stroke: .25px #673AB7;
+  -moz-text-stroke: .25px #673AB7;
+  -text-stroke: .25px #673AB7;
 }
 
 ul {
@@ -139,6 +146,14 @@ li:before {
   margin-bottom: 24px;
 }
 
+.button {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 8px 16px;
+  border: 1px solid #3366cc;
+  border-radius: 4px;
+}
+
 .divide {
   margin: 32px auto;
   border-top: 1px solid #000;
@@ -149,7 +164,7 @@ li:before {
 
   svg:first-of-type {
     transform: scale(.6);
-    margin: 8px 0 0;
+    margin: 48px 0 0;
   }
 
   svg:nth-of-type(2) {
@@ -181,7 +196,7 @@ li:before {
 
 @media (max-width: 1025px) {
 
-  html {
+  html, a {
     -webkit-text-stroke: 0px black;
     -moz-text-stroke: 0px black;
     -text-stroke: 0px black;
