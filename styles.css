@@ -70,6 +70,7 @@ section:nth-of-type(3):before {
 section:nth-of-type(4):before {
   content:'Some recent work';
   left: -225px;
+  top: 35px;
 }
 
 section:nth-of-type(5):before {
@@ -139,14 +140,6 @@ li:before {
 @keyframes text-stroke {
   0%   { -webkit-text-stroke: .25px white; }
   100% { -webkit-text-stroke: .25px black; }
-}
-
-.button {
-  display: inline-block;
-  margin-bottom: 24px;
-  padding: 8px 16px;
-  border: 1px solid #3366cc;
-  border-radius: 4px;
 }
 
 .divide {
