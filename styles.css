@@ -93,11 +93,11 @@ strong {
 
 a {
   text-decoration: none;
-  color: #2196F3;
+  color: #3F51B5;
   font-weight: 600;
-  -webkit-text-stroke: .25px #2196F3;
-  -moz-text-stroke: .25px #2196F3;
-  -text-stroke: .25px #2196F3;
+  -webkit-text-stroke: .25px #3F51B5;
+  -moz-text-stroke: .25px #3F51B5;
+  -text-stroke: .25px #3F51B5;
 }
 
 a:hover {
@@ -139,11 +139,6 @@ li:before {
 @keyframes text-stroke {
   0%   { -webkit-text-stroke: .25px white; }
   100% { -webkit-text-stroke: .25px black; }
-}
-
-.piece {
-  display: inline-block;
-  margin-bottom: 24px;
 }
 
 .button {
