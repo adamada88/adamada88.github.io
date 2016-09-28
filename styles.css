@@ -58,8 +58,8 @@ section:first-of-type:before {
 }
 
 section:nth-of-type(2):before {
-  content:'My past';
-  left: -133px;
+  content:'My history';
+  left: -162px;
 }
 
 section:nth-of-type(3):before {
@@ -126,7 +126,7 @@ li {
 }
 
 li:before {
- content: "\25b8\00a0";
+ content: "\25b8";
 }
 
 .title {
