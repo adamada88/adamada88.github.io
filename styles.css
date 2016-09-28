@@ -126,12 +126,13 @@ li {
 }
 
 li:before {
- content: "\25b8";
+ content: "\25b8\00a0";
 }
 
 .title {
   text-align: center;
   margin-top: -10px;
+  font-family: 'Josefin Slab', serif;
 }
 
 .animate {
