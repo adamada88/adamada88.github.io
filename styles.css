@@ -58,8 +58,6 @@ section:first-of-type:before {
 }
 
 section:nth-of-type(2):before {
-  content:'My history';
-  left: -162px;
 }
 
 section:nth-of-type(3):before {
@@ -68,14 +66,13 @@ section:nth-of-type(3):before {
 }
 
 section:nth-of-type(4):before {
-  content:'Some recent work';
-  left: -225px;
-  top: 35px;
+}
+
+section:nth-of-type(4) {
+  display: none;
 }
 
 section:nth-of-type(5):before {
-  content:'My contact info';
-  left: -205px;
 }
 
 p, ul {
@@ -132,7 +129,6 @@ li:before {
 .title {
   text-align: center;
   margin-top: -10px;
-  font-family: 'Josefin Slab', serif;
 }
 
 .animate {
