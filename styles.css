@@ -92,7 +92,6 @@ input {
   font-weight: 400;
   padding: 8px;
   border-radius: 4px;
-  text-transform: lowercase;
   width: 190px;
 }
 
@@ -189,6 +188,7 @@ li {
     margin-right: 48%;
     width: 4%;
     cursor: pointer;
+    display: none;
 }
 
 .animate {
@@ -215,10 +215,25 @@ li {
     position: static;
   }
 
-  
-input {
-  width: 160px;
+  input {
+    width: 160px;
+  }
+
+  .squiggle {
+    margin-top: 0px;
+    margin-bottom:0px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
+
+  .arrowsquiggle {
+    display:none;
+}
+
+  .arrow {
+    display:none;
+  }
 
 }
 
