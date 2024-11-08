@@ -1,11 +1,9 @@
-::selection {
-  background: #FFEB3B;
-}
+
 
 html {
   font-size: 24px;
   font-family: 'Josefin Slab', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   margin: 0 16px;
   padding: 0;
@@ -33,7 +31,7 @@ svg:nth-of-type(2) {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 48px;
+  font-size: 49px;
   font-weight: 400;
   text-align: center;
   padding: 0;
@@ -50,6 +48,7 @@ section:before {
   font-family: 'Josefin Slab', serif;
   position: relative;
   top: 45px;
+  font-weight: 700;
 }
 
 section:first-of-type:before {
@@ -68,14 +67,14 @@ section:nth-of-type(3):before {
 
 
 
-section:nth-of-type(5):before {
-  content:'My portfolio';
-  left: -175px;
+section:nth-of-type(4):before {
+  content:'Portfolio';
+  left: -132px;
 }
 
-section:nth-of-type(6):before {
-  content:'My contact information';
-  left: -288px;
+section:nth-of-type(5):before {
+  content:'Contact info';
+  left: -166px;
 }
 
 p, ul {
@@ -93,27 +92,28 @@ input {
   font-weight: 400;
   padding: 8px;
   border-radius: 4px;
-  width: 210px
+  text-transform: lowercase;
+  width: 190px;
 }
 
 button {
-  background-color: #FFEB3B;
-  color: black;
+  background-color: black;
+  color: white;
   font-family: 'Josefin Slab', serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 700;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 8px
+  margin-left: 8px;
 }
 
 button:hover {
-  background-color: yellow;
+  background-color: #222;
 }
 
 button:active {
-  background-color: orange;
+  background-color: #333;
 }
 
 strong {
@@ -124,7 +124,7 @@ strong {
 a {
   text-decoration: none;
   color: #3F51B5;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-text-stroke: .25px #3F51B5;
   -moz-text-stroke: .25px #3F51B5;
   -text-stroke: .25px #3F51B5;
@@ -172,6 +172,8 @@ li {
 .title {
   text-align: center;
   margin-top: -10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 
 .squiggle {
@@ -205,30 +207,18 @@ li {
 
 @media (max-width: 1200px) {
 
-  h1 {
-      font-size: 40px;
-  }
-
-  p, ul, a, button, input {
-    font-size: 20px;
-    line-height: 28px;
+  section {
+    margin-top: 40px;
   }
 
   section:before {
     position: static;
-    font-size: 20px;
-    font-weight: 700;
   }
+
+  
+input {
+  width: 160px;
+}
 
 }
 
-
-@media (max-width: 1025px) {
-
-  html, a {
-    -webkit-text-stroke: 0px black;
-    -moz-text-stroke: 0px black;
-    -text-stroke: 0px black;
-  }
-
-}
