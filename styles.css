@@ -181,6 +181,7 @@ li {
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
+    cursor: pointer;
 }
 
 .arrowsquiggle {
