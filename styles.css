@@ -175,6 +175,9 @@ li {
     font-weight: 300;
 }
 
+#ii {display:block;}
+#ii2 {display:none;}
+
 .squiggle {
     margin-top: 20px;
     margin-bottom:20px;

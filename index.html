@@ -32,14 +32,25 @@
 
   <section>
     <p>
-     <img src="images/squiggle.png" onclick="this.src = this.src == offImg ? onImg : offImg;" class="squiggle" title="An incredibly thoughtful and detailed description of the design process" alt="An incredibly thoughtful and detailed description of the design process" />
+     <img src="images/squiggle.png" id="ii" class="squiggle" title="An incredibly thoughtful and detailed description of the design process" alt="An incredibly thoughtful and detailed description of the design process" />
+     <img src="images/squiggle2.png" id="ii2" class="squiggle" title="An incredibly thoughtful and detailed description of the design process" alt="An incredibly thoughtful and detailed description of the design process" />
     </p>
   </section>
 
-  <script>
-    var onImg= "images/squiggle.png";
-    var offImg= "images/squiggle2.png";
-</script>
+
+    <script>
+        document.getElementById('ii').onclick = function() {
+        document.getElementById('ii').style.display = "none";
+        document.getElementById('ii2').style.display = "block";
+    }
+    </script>
+
+    <script>
+        document.getElementById('ii2').onclick = function() {
+        document.getElementById('ii2').style.display = "none";
+        document.getElementById('ii').style.display = "block";
+    }
+    </script>
 
   <h1>Adam Peterson</h1>
   <p class="title">
@@ -104,8 +115,8 @@
         function validatePP(){
          if(document.getElementById('pp').value == "argon"){
             document.getElementById('portfolioArtifacts').style.display = "block";
-             document.getElementById('portfolioRequest').style.display = "none";
-             document.getElementById('portfolioDenied').style.display = "none";
+            document.getElementById('portfolioRequest').style.display = "none";
+            document.getElementById('portfolioDenied').style.display = "none";
         }else{
          document.getElementById('portfolioDenied').style.display = "block";
         }
