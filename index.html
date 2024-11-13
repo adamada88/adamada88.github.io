@@ -97,11 +97,43 @@
         <button onclick="javascript:return validatePP()">Submit</button>
     </p>
 
-     <ul id="portfolioArtifacts">
-      <li><!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">-->Coming soon; reach out to Adam in the interim, for confidentialiy <!--<span class="arrow">&#8599;</span></a>--></li>
-    </ul>
+     <div id="portfolioArtifacts">
+     <p>
+      <span style="color: green;">Portfolio successfully unlocked!</span>
+      </p>
+  
+     <p>
+      For almost a decade now, I've been making major contributions to nearly every facility in the Disco ecosystem, but have been focused primarily on the flagship "Ediscovery" application and on the problem spaces around AI, Search, and Document Review.
+      </p>
+       
+      <p>To get a sense of the variety of gnarly things I worked on, here is a small sample of the things I designed and shipped while there:
+        <ul>
+             <li>The structured querying language, DQL, including a generative AI for transforming natural queries to DQL</li>
+             <li>The visual search builder, which is capable of generating any syntax supported through DQL</li>
+             <li>Filters for hundreds of attributes of various data types/shapes</li>
+             <li>Sorts for those same hundreds of attributes</li>
+             <li>A native spreadsheet viewer/renderer</li>
+             <li>Audio/Video transcription</li>
+             <li>Mass redaction tools</li>
+             <li>Custom typed fields</li>
+             <li>Document translation and summarization</li>
+             <li>The entire Early Case Assessment offering</li>
+             <li>Cecilia Q&A, a generative AI fact expert</li>
+             <li>Cecilia Auto Review, a generative AI document reviewer</li>
+             <li>100s of other features</li>
+         </ul>
+        
+      </p>
+      <p>Due to the confidential nature of much of my latest work, I've been asked to share these in more detail only over screenshare for interviewing purposes. I'd love to chat and show more about what I've been working on, but I hope you will understand that that must come at a later time.</p>
+      
+      </div>
+
+    
+
 
     <p id="portfolioDenied">
+    Incorrect password! Try again.
+    <br><br>
        <img src="images/magic-word.gif" title="Uh uh uh ... you didn't say the magic word" alt="Uh uh uh ... you didn't say the magic word" />
     </p>
 
@@ -110,6 +142,7 @@
         function validatePP(){
          if(document.getElementById('pp').value == "argon"){
             document.getElementById('portfolioArtifacts').style.display = "block";
+            document.getElementById('portfolioImage').style.display = "block";
             document.getElementById('portfolioRequest').style.display = "none";
             document.getElementById('portfolioDenied').style.display = "none";
         }else{
@@ -119,6 +152,8 @@
     </script>
 
   </section>
+
+   <img id="portfolioImage" src="hero.png" style="z-index: -1; width: 100%; border-bottom: 1px solid #ccc;"/>
 
   <section style="margin-bottom:100px;">
     <ul>
